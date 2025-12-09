@@ -1,0 +1,23 @@
+{
+  "name": "lab3_page_replacement_algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VaL2111/lab3_page_replacement_algorithms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VaL2111/lab3_page_replacement_algorithms/issues"
+  },
+  "homepage": "https://github.com/VaL2111/lab3_page_replacement_algorithms#readme",
+  "devDependencies": {
+    "prettier": "^3.7.4"
+  }
+}
