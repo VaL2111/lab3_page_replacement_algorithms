@@ -1,0 +1,14 @@
+module.exports = {
+  SETTINGS: {
+    VIRTUAL_PAGES: 100,
+    PHYSICAL_FRAMES: 20,
+    WORKING_SET_SIZE: 10,
+    TOTAL_ACCESSES: 5000,
+    WS_CHANGE_INTERVAL: 1000,
+    R_RESET_INTERVAL: 500,
+  },
+  ACCESS_TYPE: {
+    READ: "READ",
+    WRITE: "WRITE",
+  },
+};
