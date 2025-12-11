@@ -15,7 +15,7 @@ class Kernel {
   handlePageFault(process, virtualPageId) {
     this.pageFaults++;
 
-    let frame = this.ram.find((f) => f.isOccupied);
+    let frame = this.ram.find((f) => !f.isOccupied);
 
     if (!frame) {
       frame = this.selectVictim(process);
@@ -50,6 +50,8 @@ class Kernel {
 
       return candidates[Math.floor(Math.random() * candidates.length)];
     }
+
+    throw new Error(`Невідомий алгоритм: ${this.algorithmName}`);
   }
 
   swapOut(process, frame) {
@@ -64,7 +66,7 @@ class Kernel {
     frame.isOccupied = true;
     frame.virtualPageId = virtualPageId;
 
-    entry.P = 0;
+    entry.P = 1;
     entry.frameId = frame.frameId;
     entry.R = 1;
     entry.M = 0;
